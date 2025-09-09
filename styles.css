@@ -522,7 +522,6 @@ footer {
 
 /* === Contacto Rocker === */
 #contacto {
-  background: linear-gradient(135deg, #0b0f17, #1a1a1a);
   padding: 80px 20px;
   text-align: center;
   position: relative;
@@ -548,13 +547,13 @@ footer {
 
 
 
-/* Formulario rock */
+/* Formulario rock sobrio */
 form {
-  background: rgba(28, 28, 28, 0.9);
+  background: #1a1a1a;
   padding: 30px;
-  border-radius: 14px;
-  border: 1px solid rgba(76, 201, 240, 0.3);
-  box-shadow: 0 0 15px rgba(76, 201, 240, 0.2);
+  border-radius: 12px;
+  border: 1px solid #333;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.6);
   margin-bottom: 50px;
 }
 
@@ -562,71 +561,69 @@ form input,
 form textarea {
   margin-bottom: 15px;
   padding: 12px;
-  border: 2px solid transparent;
-  border-radius: 8px;
+  border: 1px solid #333;
+  border-radius: 6px;
   background: #111;
-  color: #fff;
-  transition: border 0.3s ease, box-shadow 0.3s ease;
+  color: #f5f5f5;
+  transition: border 0.3s ease, background 0.3s ease;
 }
 
 form input:focus,
 form textarea:focus {
-  border: 2px solid #e63946;
-  box-shadow: 0 0 8px rgba(230, 57, 70, 0.7);
+  border: 1px solid #e63946;
+  background: #181818;
 }
 
 form button {
   background: #e63946;
   padding: 14px;
   font-weight: bold;
-  border-radius: 8px;
+  border-radius: 6px;
   letter-spacing: 1px;
   text-transform: uppercase;
+  border: none;
+  transition: background 0.3s ease, transform 0.2s ease;
 }
 
 form button:hover {
   background: #4cc9f0;
-  box-shadow: 0 0 12px rgba(76, 201, 240, 0.7);
-  transform: scale(1.07);
+  transform: scale(1.05);
 }
 
-/* Redes sociales */
+/* Redes sociales sobrias */
 .social-links h3 {
-  font-size: 1.8rem;
+  font-size: 1.6rem;
   margin-bottom: 20px;
-  color: #4cc9f0;
-  text-shadow: 0 0 8px rgba(76, 201, 240, 0.8);
+  color: #e63946;
 }
 
 .social-icons {
   display: flex;
   justify-content: center;
-  gap: 25px;
+  gap: 20px;
   flex-wrap: wrap;
 }
 
 .social-icons a {
-  width: 60px;
-  height: 60px;
-  background: #111;
+  width: 55px;
+  height: 55px;
+  background: #222;
   border-radius: 50%;
   display: flex;
   justify-content: center;
   align-items: center;
   color: #f5f5f5;
-  font-size: 1.5rem;
-  transition: transform 0.3s ease, background 0.3s ease;
-  border: 2px solid transparent;
+  font-size: 1.4rem;
+  border: 1px solid #333;
+  transition: background 0.3s ease, transform 0.2s ease;
 }
 
 .social-icons a:hover {
   background: #e63946;
-  border: 2px solid #4cc9f0;
-  transform: rotate(-5deg) scale(1.15);
-  box-shadow: 0 0 12px rgba(230, 57, 70, 0.7);
+  transform: scale(1.1);
 }
 
 .social-icons svg {
-  width: 28px;
-  height: 28px;
+  width: 24px;
+  height: 24px;
 }

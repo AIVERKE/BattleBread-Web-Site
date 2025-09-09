@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title> BattleBread - Software & Rock</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🍞</text></svg>">
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <nav class="navbar">
+      <h1 class="logo">🍞BattleBread⚔</h1>
+      <ul class="nav-links">
+        <li><a href="#academy">Academy</a></li>
+        <li><a href="#banda">Banda</a></li>
+        <li><a href="#contacto">Contacto</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section id="inicio" class="hero">
+    <h2>Bienvenido al universo de BattleBread</h2>
+    <p>Code & Rock, Pan & Pasión</p>
+    <div class="hero-buttons">
+      <button onclick="scrollToSection('academy')">Explorar Academy</button>
+      <button onclick="scrollToSection('banda')">Explorar Banda</button>
+    </div>
+  </section>
+
+  <!-- BattleBread Academy -->
+  <section id="academy" class="section">
+    <h2>💻 BattleBread Academy - Desarrollo de Software</h2>
+    <p>
+      En BattleBread Academy combinamos creatividad, innovación y pasión por la tecnología. 
+      Desarrollamos soluciones digitales con impacto real, desde plataformas educativas 
+      hasta herramientas para la gestión de eventos académicos y culturales.
+    </p>
+    <div class="projects">
+      <div class="card">
+        <h3>
+          <a href="https://tyan.fcpn.edu.bo/" target="_blank">
+            Gestor de Eventos TWAS/TYAN
+          </a>
+        </h3>
+        <p>
+          Plataforma web diseñada para la gestión integral de los cursos 
+          <strong>TYAN Hands-on School</strong> en La Paz, Bolivia (3ra edición).  
+          Permite administrar participantes, docentes y coordinadores, con funcionalidades 
+          de registro de asistencia, carga de calificaciones y emisión de certificados digitales.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- BattleBread Banda -->
+  <section id="banda" class="section">
+    <h2>🎸 BattleBread - Banda de Rock</h2>
+    <p>Además somos una banda de rock. BattleBread es una banda que mezcla riffs poderosos con la frescura del pan recién horneado. Nuestra misión es alimentar tus oídos con los covers que nos gustan y nuestras propias composiciones.</p>
+    
+    <p>Nuestros set list de covers </p>
+    <div class="music-gallery">
+
+      <div class="playlist-card">
+        <h3>🤘 Setlist 1</h3>
+        <iframe src="https://open.spotify.com/embed/playlist/1Cqmso96OLcFmwSkLtw87V?utm_source=generator"
+          height="352" frameBorder="0" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+          loading="lazy"></iframe>
+      </div>
+
+      <div class="playlist-card">
+        <h3>🔥 Setlist 2</h3>
+        <iframe src="https://open.spotify.com/embed/playlist/1XA8Zbfuck5ZkgiW8fdtzw?utm_source=generator"
+          height="352" frameBorder="0" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+          loading="lazy"></iframe>
+      </div>
+
+      <div class="playlist-card">
+        <h3>🎶 Setlist 3</h3>
+        <iframe src="https://open.spotify.com/embed/playlist/0VZBCWUxYAZm8Avfw2steK?utm_source=generator"
+          height="352" frameBorder="0" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+          loading="lazy"></iframe>
+      </div>
+    </div>
+
+
+    <!-- Integrantes de la banda -->
+    <div class="band-members">
+      <h3>Integrantes</h3>
+      <div class="member-cards">
+        <div class="card-member">
+          <div class="avatar"><img src="images/alejandro.jpg"></div>
+          <h4>Alejandro<br> Morales</h4>
+          <p>Guitarra Melódica</p>
+          <p>Analista de Datos | Desarrollador Backend</p>
+        </div>
+        <div class="card-member">
+          <div class="avatar"><img src="images/diego.jpg"></div>
+          <h4>Diego <br>Gutierrez</h4>
+          <p>Guitarra Rítmica</p>
+          <p>Gestor de Proyectos | Desarrollador Backend</p>
+        </div>
+        <div class="card-member">
+          <div class="avatar"><img src="images/henry.jpg"></div>
+          <h4>Henry<br> Aguilar</h4>
+          <p>Batería</p>
+          <p>Especialista en Desarrollo Frontend</p>
+        </div>
+        <div class="card-member">
+          <div class="avatar"><img src="images/michael.jpg"></div>
+          <h4>Michael <br>Quispe</h4>
+          <p>Voz Principal</p>
+          <p>Ingeniero de Software | Desarrollador Backend</p>
+        </div>
+        <div class="card-member">
+          <div class="avatar"><img src="images/manuel.jpg"></div>
+          <h4>José <br>Manuel</h4>
+          <p>Bajo</p>
+          <p>Consultor en Economía y Derecho</p>
+        </div>
+        <div class="card-member">
+          <div class="avatar"><img src="images/alan.jpg"></div>
+          <h4>Alan <br>Maldonado</h4>
+          <p>Piano</p>
+          <p>Administrador de Bases de Datos | Desarrollador Frontend</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contacto -->
+  <section id="contacto" class="section">
+    <h2>Contacto</h2>
+    <form id="contact-form">
+      <input type="text" placeholder="Tu nombre" required>
+      <input type="email" placeholder="Tu email" required>
+      <textarea placeholder="Tu mensaje" required></textarea>
+      <button type="submit">Enviar</button>
+    </form>
+
+    <!-- Redes Sociales -->
+    <div class="social-links">
+      <h3>Síguenos en redes</h3>
+      <div class="social-icons">
+        <a href="https://www.facebook.com/BattleBread" target="_blank">📘 Facebook</a>
+        <a href="https://www.instagram.com/BattleBread" target="_blank">📸 Instagram</a>
+        <a href="https://www.tiktok.com/BattleBread" target="_blank">▶️ Tiktok</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 BattleBread Academy. Rock & Software, todos los derechos reservados.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

@@ -627,3 +627,46 @@ form button:hover {
   width: 24px;
   height: 24px;
 }
+
+/* Loader pantalla completa */
+#loader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #111; /* Fondo oscuro */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+}
+
+/* Pan animado */
+.bread {
+  font-size: 5rem;
+  animation: toast 2s infinite alternate;
+}
+
+/* Texto */
+.loading-text {
+  margin-top: 15px;
+  font-size: 1.2rem;
+  color: #eee;
+  font-family: monospace;
+  letter-spacing: 2px;
+  animation: blink 1.2s infinite;
+}
+
+/* Animación de tostado */
+@keyframes toast {
+  0% { filter: brightness(1) hue-rotate(0deg); }
+  100% { filter: brightness(0.8) sepia(0.6) hue-rotate(-20deg) saturate(2); }
+}
+
+/* Parpadeo del texto */
+@keyframes blink {
+  0%, 50%, 100% { opacity: 1; }
+  25%, 75% { opacity: 0.4; }
+}

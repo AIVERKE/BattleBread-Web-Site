@@ -40,3 +40,13 @@ form.addEventListener('submit', async (e) => {
     alert('Error de red. Intenta nuevamente.');
   }
 });
+
+// script.js
+window.addEventListener("load", () => {
+  const loader = document.getElementById("loader");
+  loader.style.opacity = "0";
+
+  setTimeout(() => {
+    loader.style.display = "none";
+  }, 600); // medio segundo para desvanecer
+});
